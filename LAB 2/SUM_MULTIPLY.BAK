@@ -1,0 +1,14 @@
+DOMAINS
+product,sum = integer
+PREDICATES
+add_em_up(sum,sum,sum)
+multiply_em(product,product,product)
+CLAUSES
+add_em_up(X,Y,Sum):-
+Sum=X+Y.
+multiply_em(X,Y,Product):-
+Product=X*Y.
+%This program does two things: It adds and it multiplies. Given the goal
+GOAL
+add_em_up(32, 54, Sum).
+%multiply_em(4,5,Product).
