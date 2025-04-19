@@ -1,0 +1,11 @@
+PREDICATES
+add(integer, integer, integer)
+CLAUSES
+add:- 
+write("Enter 1st number:"), readln(X),
+write("Enter 2nd number:"), readln(Y).
+
+Z = X + Y.
+write("Final Answer:", Z), nl.
+GOAL
+add.

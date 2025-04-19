@@ -1,0 +1,34 @@
+%A person can buy a car if the person likes the car and the car is for sale.
+
+PREDICATES
+nondeterm car_buy(symbol, symbol)
+nondeterm person(symbol)
+nondeterm car(symbol)
+likes(symbol, symbol)
+for_sale(symbol)
+
+CLAUSES
+can_buy(X, Y):- person(X),
+car(Y),
+likes(X, Y),
+for_sale(Y).
+
+person(kelly).
+person(akash).
+person(atul).
+person(mark).
+
+car(ford_mustang).
+car(volvo).
+
+likes(kelly, volvo).
+likes(akash, ford_mustang).
+likes(atul, tata).
+likes(mark, tennis).
+
+for_sale(pizza).
+for_sale(ford_mustang).
+for_sale(volvo).
+
+GOAL
+can_buy(Who, What).
