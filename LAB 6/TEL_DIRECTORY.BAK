@@ -1,0 +1,22 @@
+/* LAB 6
+2nd Objective: Implementation of Mini Phone directory */
+
+PREDICATES
+nondeterm phone_number(symbol,symbol)
+
+CLAUSES
+phone_number("Ram","EZY-3665").
+phone_number("Shyam","555-5233").
+phone_number("Hari","909-1010").
+phone_number("Sita","438-8400").
+phone_number("Gita","438-8470").
+phone_number("Rita","438-8900").
+phone_number("Sohan","438-84022").
+phone_number("Mohan","438-8453").
+
+GOAL
+%phone_number("Ram", Number).
+%phone_number(Who, "438-8400").
+%phone_number("Sohan", Number).
+phone_number(Who, Number).
+%phone_number(Who,What).

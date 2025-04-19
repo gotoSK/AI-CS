@@ -1,0 +1,18 @@
+/* LAB 6
+1st ObjectiveL Typing Arguments in Predicate Declarations
+Implementation of Mini Telephone dictionary */
+
+PREDICATES
+alphabet_position(char, integer)
+CLAUSES
+alphabet_position('a', 1).
+alphabet_position('b', 2).
+alphabet_position('c', 3).
+/* ... other letters go here ... */
+alphabet_position('z', 26).
+
+GOAL
+%alphabet_position('a', 1).
+%alphabet_position(X, 3).
+alphabet_position('z', What).
+%alphabet_position(What, Where).
