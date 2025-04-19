@@ -1,0 +1,7 @@
+DOMAINS
+int list—Integer *
+PREDICATES
+append(int_list,int_list,int_list)
+CLAUSES
+z=x.
+GOAL
